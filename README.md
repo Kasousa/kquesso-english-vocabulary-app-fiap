@@ -249,10 +249,10 @@ As métricas de Web Vitals são indicadores essenciais da qualidade da experiên
 
 | Métrica | Score | Status |
 |---------|-------|--------|
-| **Performance** | 95+ | ✅ Excelente |
-| **Accessibility** | 100 | ✅ Perfeito |
-| **Best Practices** | 100 | ✅ Perfeito |
-| **SEO** | 100 | ✅ Perfeito |
+| **Performance** | 100 | ✅ Perfeito |
+| **Accessibility** | 88 | ✅ Bom |
+| **Best Practices** | 96 | ✅ Excelente |
+| **SEO** | 91 | ✅ Excelente |
 
 </div>
 
@@ -288,36 +288,7 @@ As métricas de Web Vitals são indicadores essenciais da qualidade da experiên
 - 🎯 **Meta**: < 3.4s (Bom)
 - 📖 **Significado**: Mede a rapidez com que o conteúdo é visualmente exibido durante o carregamento da página.
 
-### 🔍 Como Executar o Lighthouse
-
-#### Método 1: Chrome DevTools (Recomendado)
-1. Abra a aplicação no Google Chrome
-2. Pressione `F12` ou `Ctrl+Shift+I` (Windows) / `Cmd+Option+I` (Mac)
-3. Vá para a aba **Lighthouse**
-4. Selecione as categorias desejadas
-5. Clique em **"Analyze page load"**
-6. Aguarde a análise completa
-7. Veja os resultados e recomendações
-
-#### Método 2: CLI (Command Line)
-```bash
-# Instalar o Lighthouse
-npm install -g lighthouse
-
-# Executar análise
-lighthouse https://seu-site.vercel.app --view
-
-# Salvar relatório
-lighthouse https://seu-site.vercel.app --output html --output-path ./lighthouse-report.html
-```
-
-#### Método 3: PageSpeed Insights
-1. Acesse [PageSpeed Insights](https://pagespeed.web.dev/)
-2. Cole a URL do seu site
-3. Clique em "Analisar"
-4. Veja os resultados para mobile e desktop
-
-### 📸 Resultado do Lighthouse
+###  Resultado do Lighthouse
 
 ![Lighthouse Results](./lighthouse.png)
 
