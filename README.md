@@ -317,13 +317,55 @@ lighthouse https://seu-site.vercel.app --output html --output-path ./lighthouse-
 3. Clique em "Analisar"
 4. Veja os resultados para mobile e desktop
 
-### 📸 Captura de Tela do Lighthouse
+### 📸 Resultado do Lighthouse
 
-> **Nota**: Após realizar o deploy, execute o Lighthouse e adicione aqui a captura de tela dos resultados:
->
-> ```markdown
-> ![Lighthouse Results](./docs/lighthouse-results.png)
-> ```
+![Lighthouse Results](./lighthouse.png)
+
+### 📊 Entendendo as Métricas Principais
+
+O Lighthouse avalia a qualidade da aplicação em 4 categorias fundamentais:
+
+#### 🚀 **1. Performance (Desempenho)**
+Mede a velocidade de carregamento e responsividade da aplicação. Avalia métricas como:
+- **LCP (Largest Contentful Paint)**: Tempo até o maior elemento aparecer
+- **FID (First Input Delay)**: Tempo de resposta à primeira interação
+- **CLS (Cumulative Layout Shift)**: Estabilidade visual da página
+- **FCP (First Contentful Paint)**: Tempo até o primeiro conteúdo aparecer
+- **Speed Index**: Rapidez com que o conteúdo é visualmente exibido
+
+**Por que importa**: Uma boa performance garante que os usuários não abandonem o site devido à lentidão. Sites mais rápidos têm melhor conversão e satisfação do usuário.
+
+#### ♿ **2. Accessibility (Acessibilidade)**
+Avalia se a aplicação é acessível a todos os usuários, incluindo pessoas com deficiências. Verifica:
+- Contraste adequado de cores
+- Tags semânticas e ARIA labels
+- Navegação por teclado
+- Textos alternativos em imagens
+- Estrutura de headings (h1, h2, etc.)
+
+**Por que importa**: Garante que a aplicação possa ser usada por todos, incluindo pessoas com deficiências visuais, auditivas ou motoras. É também um requisito legal em muitos países.
+
+#### ✅ **3. Best Practices (Melhores Práticas)**
+Verifica se o código segue as melhores práticas de desenvolvimento web moderno:
+- Uso de HTTPS
+- Segurança (sem vulnerabilidades conhecidas)
+- Console livre de erros
+- Uso correto de APIs modernas
+- Otimização de imagens
+- Bibliotecas atualizadas
+
+**Por que importa**: Seguir as melhores práticas garante segurança, manutenibilidade e compatibilidade da aplicação. Previne problemas futuros e vulnerabilidades.
+
+#### 🔍 **4. SEO (Search Engine Optimization)**
+Avalia se a aplicação está otimizada para mecanismos de busca:
+- Meta tags (title, description)
+- Viewport configurado corretamente
+- Textos legíveis (tamanho de fonte adequado)
+- Links com textos descritivos
+- Robots.txt e sitemap
+- Estrutura semântica do HTML
+
+**Por que importa**: Um bom SEO aumenta a visibilidade da aplicação nos resultados de busca do Google e outros buscadores, gerando mais tráfego orgânico e alcance.
 
 ### 💡 Otimizações Implementadas
 
